@@ -70,6 +70,8 @@ body {
   color: var(--text-color);
   transition: .3s;
   /* For animation dark mode */
+  margin: 0;
+  overflow-x: hidden;
 }
 
 h1,
@@ -169,8 +171,9 @@ body.dark-theme {
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
   max-width: 1024px;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  width: 100%;
 }
 
 .grid {
@@ -235,6 +238,15 @@ body.dark-theme {
 .nav__logo:hover {
   color: var(--first-color);
 }
+
+/* .nav__menu {
+  position: fixed;
+  width: 90%;
+  max-width: calc(100% - 4rem); 
+  left: 50%;
+  transform: translateX(-50%);
+} */
+
 
 @media screen and (max-width: 1023px) {
   .nav__menu {
@@ -413,9 +425,6 @@ body.dark-theme {
   box-shadow: 0 4px 12px hsla(228, 66%, 45%, .25);
 }
 
-/* .nav__button {
-  display: none;
-} */
 
 /*=============== LOGOS ===============*/
 .logos__container {
